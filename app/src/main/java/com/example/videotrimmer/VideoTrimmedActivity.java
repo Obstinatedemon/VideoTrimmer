@@ -40,5 +40,12 @@ public class VideoTrimmedActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent setIntent = new Intent(VideoTrimmedActivity.this,MainActivity.class);
+        startActivity(setIntent);
     }
 }
